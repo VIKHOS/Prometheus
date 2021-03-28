@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class PromController {
 
 
-    @RequestMapping("/hi")
-    public String HelloWorld(@RequestParam String hi) {
-        return hi + " world";
+    @RequestMapping("/type")
+    public String HelloWorld(@RequestParam String greeting) {
+        return greeting + " world";
     }
+
+    
 
 }
