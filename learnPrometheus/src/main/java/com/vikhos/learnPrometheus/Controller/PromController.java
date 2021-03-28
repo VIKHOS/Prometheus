@@ -8,12 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PromController {
 
-
     @RequestMapping("/type")
     public String HelloWorld(@RequestParam String greeting) {
-        return greeting + " world";
-    }
 
-    
+        return greeting == "" ? "hello world" : greeting;
+    }
 
 }
